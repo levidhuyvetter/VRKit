@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-extension VRSceneView {
+public extension VRSceneView {
     init(video:URL, projection:SCNVRVideoScene.Projection = .cinema) {
         let scene = SCNVRVideoScene(video: video, projection: projection)
         self.init(scene: scene, camera: scene.camera)

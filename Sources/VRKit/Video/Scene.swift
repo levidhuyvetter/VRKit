@@ -1,7 +1,7 @@
 import SceneKit
 import AVKit
 
-class SCNVRVideoScene:SCNScene {
+public class SCNVRVideoScene:SCNScene {
     let player:AVPlayer
     var camera:SCNVRCamera
     
@@ -90,7 +90,7 @@ class SCNVRVideoScene:SCNScene {
         fatalError("init(coder:) has not been implemented")
     }
     
-    enum Projection {
+    public enum Projection {
         case tb(fov:Int)
         case sbs(fov:Int)
         case equirectangular(fov:Int)

@@ -12,6 +12,7 @@ let package = Package(
             targets: ["VRKit"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/levidhuyvetter/GeometryKit.git", branch: "main")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -20,7 +21,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "VRKit",
-            dependencies: []),
+            dependencies: ["GeometryKit"],
+            resources: [
+                .process("Video/Scenes.scnassets")
+            ]),
         .testTarget(
             name: "VRKitTests",
             dependencies: ["VRKit"]),

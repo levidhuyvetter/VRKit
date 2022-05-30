@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "geometrykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/levidhuyvetter/GeometryKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fb6ad74de0b1aeefaaa8a13b9720b950ecaa9caf"
+      }
+    }
+  ],
+  "version" : 2
+}

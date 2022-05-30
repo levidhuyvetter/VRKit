@@ -2,7 +2,7 @@ import SwiftUI
 import SceneKit
 
 @available(iOS 15.0, *)
-struct VRSceneView:View {
+public struct VRSceneView:View {
     var scene:SCNScene
     var camera:SCNVRCamera
     var hud = HUD()
@@ -20,7 +20,7 @@ struct VRSceneView:View {
         }
     }
     
-    var body: some View {
+    public var body: some View {
         HStack(spacing:5) {
             SceneView(
                 scene: self.scene,

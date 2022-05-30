@@ -7,7 +7,7 @@ public struct VRSceneView:View {
     var camera:SCNVRCamera
     var hud = HUD()
     
-    init(scene:SCNScene, camera:SCNVRCamera? = nil) {
+    public init(scene:SCNScene, camera:SCNVRCamera? = nil) {
         self.scene = scene
         
         if let camera = camera {

@@ -1,6 +1,6 @@
 import SceneKit
 
-protocol SCNVRCamera:AnyObject {
+public protocol SCNVRCamera:AnyObject {
     var leftEye:SCNNode { get }
     var rightEye:SCNNode { get }
     var orientation:SCNQuaternion { get set }
